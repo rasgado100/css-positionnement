@@ -1,0 +1,69 @@
+/* 1. La structure de la page : Grid */
+.page {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-areas:
+    "entete  entete"
+    "lateral contenu"
+    "pied    pied";
+  min-height: 100vh;
+}
+
+/* 2. Le header : Flexbox + sticky */
+.entete {
+  grid-area: entete;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  z-index: 10;
+}
+.logo { font-weight: 700; color: var(--ink); text-decoration: none; }
+.liens { display: flex; gap: 16px; }
+.liens a { color: var(--accent); text-decoration: none; }
+
+.lateral { grid-area: lateral; padding: 24px; background: var(--soft); }
+.lateral ul { padding-left: 20px; }
+.contenu { grid-area: contenu; padding: 24px; }
+.pied { grid-area: pied; padding: 16px 24px; border-top: 1px solid var(--line); }
+
+/* 3. Les cartes : Grid responsive */
+.cartes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+/* 4. Le badge : relative + absolute */
+.card {
+  position: relative;
+  padding: 80px 24px 24px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--alert);
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+/* 5. Version mobile : on réécrit juste le plan */
+@media (max-width: 700px) {
+  .page {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "entete"
+      "contenu"
+      "lateral"
+      "pied";
+  }
+}

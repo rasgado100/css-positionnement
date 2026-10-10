@@ -1,0 +1,27 @@
+.page { max-width: 900px; margin: 0 auto; padding: 24px; }
+section { margin-bottom: 32px; }
+
+/* 1. Colonnes de largeurs différentes */
+.trois-colonnes {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 16px;
+}
+
+/* 2. Autant de colonnes que possible, chacune d'au moins 200px */
+.cartes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+/* 3. Une carte sur 2 colonnes */
+.large { grid-column: span 2; }
+
+/* 4. Centrage */
+.centre {
+  display: grid;
+  place-items: center;
+  height: 160px;
+  border: 1px dashed var(--line);
+}

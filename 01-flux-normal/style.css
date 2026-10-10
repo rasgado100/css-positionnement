@@ -1,0 +1,28 @@
+.conteneur {
+  max-width: 720px;   /* sans largeur, margin auto ne fait rien */
+  margin: 0 auto;     /* marges gauche et droite égales = centré */
+  padding: 24px;
+}
+
+.box { margin-bottom: 8px; }
+
+/* width et height sont ignorés sur un élément inline */
+.inline {
+  width: 300px;
+  height: 80px;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+}
+
+/* inline-block : à la suite, mais accepte width et height */
+.bouton {
+  display: inline-block;
+  width: 120px;
+  padding: 8px 0;
+  margin-right: 8px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background: var(--accent);
+  border-radius: 6px;
+}

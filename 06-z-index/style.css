@@ -1,0 +1,55 @@
+.page { max-width: 720px; margin: 0 auto; padding: 24px; }
+
+.scene {
+  position: relative;
+  height: 220px;
+  margin-bottom: 24px;
+  border: 1px dashed var(--line);
+}
+
+/* 1. Plus le nombre est grand, plus l'élément est devant */
+.b {
+  position: absolute;
+  width: 170px;
+  height: 100px;
+  padding: 8px;
+  color: #fff;
+  border-radius: 8px;
+}
+.b1 { top: 20px; left: 20px;  background: #2563eb; z-index: 1; }
+.b2 { top: 50px; left: 100px; background: #dc2626; z-index: 3; }
+.b3 { top: 80px; left: 180px; background: #16a34a; z-index: 2; }
+
+/* 2. Parent A crée un contexte d'empilement de niveau 1 */
+.parent-a {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 240px;
+  height: 120px;
+  background: var(--accent-soft);
+  z-index: 1;
+}
+
+/* Son enfant ne peut pas dépasser le niveau de son parent */
+.enfant {
+  position: relative;
+  z-index: 9999;
+  width: 220px;
+  margin: 60px 0 0 100px;
+  padding: 8px;
+  color: #fff;
+  background: var(--accent);
+}
+
+/* Parent B, niveau 2 : passe devant tout le contexte du parent A */
+.parent-b {
+  position: absolute;
+  top: 60px;
+  left: 150px;
+  width: 260px;
+  height: 120px;
+  padding: 8px;
+  background: #fecaca;
+  z-index: 2;
+}

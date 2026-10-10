@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>z-index</title>
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p class="retour"><a href="../index.html">← Retour au sommaire</a></p>
+<main class="page">
+  <h1>z-index</h1>
+
+  <h2>1. Empiler avec z-index</h2>
+  <div class="scene">
+    <div class="b b1">z-index: 1</div>
+    <div class="b b2">z-index: 3</div>
+    <div class="b b3">z-index: 2</div>
+  </div>
+
+  <h2>2. Le piège du contexte d'empilement</h2>
+  <p>
+    L'enfant a <code>z-index: 9999</code> et pourtant il reste derrière le parent B.
+    Essaie de supprimer <code>z-index: 1</code> sur <code>.parent-a</code> : l'enfant repasse devant.
+  </p>
+  <div class="scene">
+    <div class="parent-a">
+      <div class="enfant">z-index: 9999 (mais reste derrière)</div>
+    </div>
+    <div class="parent-b">Parent B : z-index: 2</div>
+  </div>
+</main>
+</body>
+</html>

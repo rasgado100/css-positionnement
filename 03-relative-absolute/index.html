@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>relative et absolute</title>
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p class="retour"><a href="../index.html">← Retour au sommaire</a></p>
+<main class="page">
+  <h1>relative et absolute</h1>
+
+  <h2>relative : décaler sans casser</h2>
+  <div class="box">Boîte 1</div>
+  <div class="box decale">Boîte 2, décalée (top: 12px; left: 32px)</div>
+  <div class="box">Boîte 3 : elle n'a pas bougé, il reste un « trou » à la place d'origine de la boîte 2</div>
+
+  <h2>Un badge bien placé : parent relative, enfant absolute</h2>
+  <article class="card">
+    <span class="badge">Nouveau</span>
+    <div class="visuel"></div>
+    <div class="contenu">
+      <h3>Casque audio sans fil</h3>
+      <p>Le badge est en absolute, la carte est en relative.</p>
+    </div>
+  </article>
+
+  <h2>Le bug classique : on oublie le relative</h2>
+  <article class="card card--bug">
+    <span class="badge">Nouveau</span>
+    <div class="visuel"></div>
+    <div class="contenu">
+      <h3>Casque audio sans fil</h3>
+      <p>Ici la carte est en static : regarde où le badge est parti (en haut à droite de la page).</p>
+    </div>
+  </article>
+</main>
+</body>
+</html>

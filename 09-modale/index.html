@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Une fenêtre modale</title>
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p class="retour"><a href="../index.html">← Retour au sommaire</a></p>
+<main class="page">
+  <h1>Une fenêtre modale en CSS pur</h1>
+  <p>Aucun JavaScript : la modale s'ouvre avec <code>:target</code>.</p>
+  <a class="ouvrir" href="#modale">Ouvrir la modale</a>
+</main>
+
+<div class="overlay" id="modale">
+  <div class="modal">
+    <h2>Bienvenue !</h2>
+    <p>Voilà ta première modale en CSS pur.</p>
+    <a class="fermer" href="#">Fermer</a>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Positionnement CSS : les démos</title>
+<link rel="stylesheet" href="assets/base.css">
+<style>
+  main { max-width: 720px; margin: 0 auto; padding: 32px 24px; }
+  ol { padding: 0; list-style: none; }
+  li { margin-bottom: 8px; }
+  li a {
+    display: block;
+    padding: 12px 16px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  li a:hover, li a:focus-visible { border-color: var(--accent); background: var(--accent-soft); }
+  li small { display: block; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Positionnement CSS : les démos</h1>
+  <p>Le code de l'article « Le positionnement en CSS : toutes les méthodes, de float à Grid ». Une démo par méthode, ouvre-les dans l'ordre.</p>
+  <ol>
+    <li><a href="01-flux-normal/index.html">01 · Le flux normal<small>block, inline, inline-block, margin: 0 auto</small></a></li>
+    <li><a href="02-float/index.html">02 · float<small>image entourée de texte, parent qui s'effondre</small></a></li>
+    <li><a href="03-relative-absolute/index.html">03 · relative et absolute<small>le badge sur une carte, et le bug classique</small></a></li>
+    <li><a href="04-fixed/index.html">04 · fixed<small>un bouton collé à la fenêtre</small></a></li>
+    <li><a href="05-sticky/index.html">05 · sticky<small>header et sommaire qui restent visibles</small></a></li>
+    <li><a href="06-z-index/index.html">06 · z-index<small>empilement et contexte d'empilement</small></a></li>
+    <li><a href="07-flexbox/index.html">07 · Flexbox<small>navbar, centrage, colonnes, retour à la ligne</small></a></li>
+    <li><a href="08-grid/index.html">08 · Grid<small>colonnes, grille responsive, span, centrage</small></a></li>
+    <li><a href="09-modale/index.html">09 · Mini-projet 1 : la modale<small>fixed + absolute + transform, en CSS pur</small></a></li>
+    <li><a href="10-page-complete/index.html">10 · Mini-projet 2 : la page complète<small>Grid + Flexbox + sticky + badge</small></a></li>
+  </ol>
+</main>
+</body>
+</html>

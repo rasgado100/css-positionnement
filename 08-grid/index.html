@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grid</title>
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p class="retour"><a href="../index.html">← Retour au sommaire</a></p>
+<main class="page">
+  <h1>Grid</h1>
+
+  <section>
+    <h2>1. Trois colonnes : 1fr 2fr 1fr</h2>
+    <div class="trois-colonnes">
+      <div class="box">1fr</div>
+      <div class="box">2fr</div>
+      <div class="box">1fr</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Grille de cartes responsive, sans media query</h2>
+    <p>Redimensionne la fenêtre : le nombre de colonnes s'adapte tout seul.</p>
+    <div class="cartes">
+      <div class="box">Carte 1</div>
+      <div class="box">Carte 2</div>
+      <div class="box">Carte 3</div>
+      <div class="box">Carte 4</div>
+      <div class="box">Carte 5</div>
+      <div class="box">Carte 6</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Une carte qui s'étend sur 2 colonnes</h2>
+    <div class="cartes">
+      <div class="box large">grid-column: span 2</div>
+      <div class="box">Carte</div>
+      <div class="box">Carte</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Centrer en deux lignes</h2>
+    <div class="centre"><div class="box">Je suis centré</div></div>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>float</title>
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p class="retour"><a href="../index.html">← Retour au sommaire</a></p>
+<main class="page">
+  <h1>float</h1>
+
+  <h2>1. Une image entourée de texte (le vrai usage)</h2>
+  <article class="article">
+    <img class="avatar" src="avatar.svg" alt="Avatar">
+    <p>
+      Un long paragraphe qui vient entourer l'image. C'est pour ça que
+      <code>float</code> a été inventé : reproduire le texte qui épouse une
+      image, comme dans un magazine. Ajoute du texte, redimensionne la
+      fenêtre, et regarde comment les lignes se réorganisent autour de l'image.
+      Un long paragraphe qui vient entourer l'image. C'est pour ça que
+      <code>float</code> a été inventé.
+    </p>
+  </article>
+
+  <h2>2. Le piège : le parent qui s'effondre</h2>
+  <div class="parent sans-fix">
+    <div class="enfant-flottant">Je flotte</div>
+  </div>
+  <p>↑ Le cadre en pointillés est écrasé : il ne contient plus son enfant.</p>
+
+  <div class="parent avec-fix">
+    <div class="enfant-flottant">Je flotte</div>
+  </div>
+  <p>↑ Avec <code>display: flow-root</code> sur le parent, le cadre englobe de nouveau son enfant.</p>
+</main>
+</body>
+</html>

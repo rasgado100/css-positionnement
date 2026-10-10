@@ -1,0 +1,49 @@
+/* Styles communs aux démos : volontairement sobres,
+   pour que ce soit le positionnement qu'on regarde. */
+:root {
+  --ink: #1f2937;
+  --muted: #64748b;
+  --line: #cbd5e1;
+  --soft: #f1f5f9;
+  --accent: #2563eb;
+  --accent-soft: #dbeafe;
+  --alert: #dc2626;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--ink);
+  line-height: 1.6;
+  background: #fff;
+}
+
+h1 { margin: 0 0 8px; font-size: 1.5rem; }
+h2 { margin: 32px 0 8px; font-size: 1.1rem; }
+
+code {
+  background: var(--soft);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* Lien de retour en haut de chaque démo */
+.retour {
+  margin: 0;
+  padding: 10px 24px;
+  background: var(--soft);
+  border-bottom: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+.retour a { color: var(--accent); }
+
+/* Une boîte bien visible pour repérer les éléments */
+.box {
+  padding: 12px 16px;
+  border: 2px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 8px;
+}

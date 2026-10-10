@@ -1,0 +1,33 @@
+.page { max-width: 720px; margin: 0 auto; padding: 24px; }
+
+.ouvrir, .fermer {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Le fond sombre couvre tout l'écran */
+.overlay {
+  position: fixed;
+  inset: 0; /* raccourci pour top, right, bottom, left = 0 */
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+.overlay:target { display: block; } /* visible quand l'URL contient #modale */
+
+/* La boîte est centrée dans l'overlay */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(400px, 90%);
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+}
+.modal h2 { margin-top: 0; }

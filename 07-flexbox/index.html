@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flexbox</title>
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p class="retour"><a href="../index.html">← Retour au sommaire</a></p>
+<main class="page">
+  <h1>Flexbox</h1>
+
+  <section>
+    <h2>1. Une barre de navigation</h2>
+    <header class="nav">
+      <a class="logo" href="#">MonBlog</a>
+      <nav class="liens">
+        <a href="#">Articles</a>
+        <a href="#">À propos</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+  </section>
+
+  <section>
+    <h2>2. Centrer parfaitement</h2>
+    <div class="centre"><div class="box">Je suis centré</div></div>
+  </section>
+
+  <section>
+    <h2>3. Des colonnes qui se partagent l'espace</h2>
+    <div class="rangee">
+      <div class="box colonne">flex: 1</div>
+      <div class="box colonne">flex: 1</div>
+      <div class="box colonne colonne--large">flex: 2</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Passer à la ligne avec flex-wrap</h2>
+    <div class="cartes-wrap">
+      <div class="box">Carte 1</div>
+      <div class="box">Carte 2</div>
+      <div class="box">Carte 3</div>
+      <div class="box">Carte 4</div>
+      <div class="box">Carte 5</div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

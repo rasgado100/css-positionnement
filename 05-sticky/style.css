@@ -1,0 +1,36 @@
+/* Le header se colle en haut dès qu'il l'atteint */
+.entete {
+  position: sticky;
+  top: 0;            /* sans seuil, sticky ne fait rien */
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+
+.layout {
+  display: flex;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+  align-items: flex-start; /* important : sinon l'aside prend toute la hauteur et ne peut pas "glisser" */
+}
+
+/* Le sommaire se colle sous le header */
+.sommaire {
+  position: sticky;
+  top: 72px;
+  width: 200px;
+  flex-shrink: 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+}
+.sommaire ul { margin: 8px 0 0; padding-left: 20px; }
+
+.texte { flex: 1; }

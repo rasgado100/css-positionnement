@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le flux normal</title>
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p class="retour"><a href="../index.html">← Retour au sommaire</a></p>
+<main class="conteneur">
+  <h1>Le flux normal</h1>
+  <p>Ce conteneur est centré avec <code>max-width: 720px</code> et <code>margin: 0 auto</code>.</p>
+
+  <h2>display: block</h2>
+  <div class="box">Je prends toute la largeur.</div>
+  <div class="box">Et je passe à la ligne.</div>
+
+  <h2>display: inline</h2>
+  <p>
+    Du texte avec <span class="inline">un span</span> et
+    <span class="inline">un autre span</span> : ils restent dans la ligne,
+    et leur <code>width</code> / <code>height</code> sont ignorés.
+  </p>
+
+  <h2>display: inline-block</h2>
+  <a class="bouton" href="#">Bouton 1</a>
+  <a class="bouton" href="#">Bouton 2</a>
+  <a class="bouton" href="#">Bouton 3</a>
+</main>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.page { max-width: 900px; margin: 0 auto; padding: 24px; }
+section { margin-bottom: 32px; }
+
+/* 1. Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between; /* logo et liens aux extrémités */
+  align-items: center;            /* centrage vertical */
+  padding: 12px 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.liens { display: flex; gap: 16px; }
+.liens a { color: var(--accent); text-decoration: none; }
+.logo { font-weight: 700; color: var(--ink); text-decoration: none; }
+
+/* 2. Centrage parfait */
+.centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  border: 1px dashed var(--line);
+}
+
+/* 3. Colonnes */
+.rangee { display: flex; gap: 16px; }
+.colonne { flex: 1; }
+.colonne--large { flex: 2; } /* prend deux fois plus de place */
+
+/* 4. Retour à la ligne */
+.cartes-wrap { display: flex; flex-wrap: wrap; gap: 16px; }
+.cartes-wrap .box { flex: 1 1 200px; } /* grandit, rétrécit, base de 200px */

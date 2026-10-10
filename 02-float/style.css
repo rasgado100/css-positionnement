@@ -1,0 +1,26 @@
+.page { max-width: 720px; margin: 0 auto; padding: 24px; }
+
+/* 1. Image + texte */
+.avatar {
+  float: left;
+  width: 100px;
+  margin: 0 16px 8px 0; /* de l'air entre l'image et le texte */
+  border-radius: 50%;
+}
+
+/* 2. Le piège du parent qui s'effondre */
+.parent {
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 3px dashed var(--accent);
+}
+
+.enfant-flottant {
+  float: left;
+  width: 160px;
+  padding: 12px;
+  background: var(--accent-soft);
+}
+
+/* La solution moderne, une seule ligne */
+.avec-fix { display: flow-root; }
